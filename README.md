@@ -1,1 +1,1 @@
-# CodeWars-7kuy
+# CodeWars-7-kata
