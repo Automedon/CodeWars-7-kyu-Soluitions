@@ -1,1 +1,1 @@
-const flatten = arr => arr.reduce((a, v) => a.concat(v), [])
+const flatten = (array) => [].concat(...array);
