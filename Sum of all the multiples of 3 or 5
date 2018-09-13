@@ -1,0 +1,4 @@
+const findSum = n =>
+  Array.from({ length: n }, (_, index) => index + 1)
+    .filter(num => num % 3 === 0 || num % 5 === 0)
+    .reduce((total, value) => total + value, 0)
