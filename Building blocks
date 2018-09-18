@@ -1,20 +1,16 @@
-class Block{
-
-  constructor([a,b,c]){
-    this.Width=a;
-    this.Length=b;
-    this.Height=c
+class Block {
+  constructor(data){
+    [this.w, this.l, this.h] = data;
   }
-  getWidth(){
-  return this.Width}
-  getLength(){
-  return this.Length}
-  getHeight(){
-  return this.Height}
+  getWidth(){ return this.w }
+  getLength(){ return this.l }
+  getHeight(){ return this.h }
   getVolume(){
-  return this.Height*this.Length*this.Width}
+    let {l, w, h} = this;
+    return w*l*h;
+  }
   getSurfaceArea(){
-  return 2*(this.Height*this.Length+this.Width*this.Length+this.Width*this.Height)}
-  // ...
-  
+    let {l, w, h} = this;
+    return 2 * (l*w + l*h + w*h);
+  }
 }
