@@ -1,0 +1,20 @@
+class Block{
+
+  constructor([a,b,c]){
+    this.Width=a;
+    this.Length=b;
+    this.Height=c
+  }
+  getWidth(){
+  return this.Width}
+  getLength(){
+  return this.Length}
+  getHeight(){
+  return this.Height}
+  getVolume(){
+  return this.Height*this.Length*this.Width}
+  getSurfaceArea(){
+  return 2*(this.Height*this.Length+this.Width*this.Length+this.Width*this.Height)}
+  // ...
+  
+}
