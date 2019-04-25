@@ -41,5 +41,5 @@ function thirstyRobot (drinks) {
     if (abv > 15) drunk = true
   })
   if (!sick) return drunk ? "Wonky robot" : "Fine"
-  else return drunk ? "Poor robot" : "Oh dear"
+  return drunk ? "Poor robot" : "Oh dear"
 }
